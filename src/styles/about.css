@@ -1,0 +1,320 @@
+#about .content {
+    margin: auto;
+    display: grid;
+    max-width: 1366px;
+}
+
+#about .content .first-section { padding: 1rem; }
+#about .content .second-section { padding: 1rem; }
+
+#about .content section h2 {
+    margin: 1rem 0;
+    font-size: 1.3em;
+    color: var(--theme);
+    letter-spacing: 2px;
+    font-family: agency, 'segoe ui', sans-serif;
+}
+
+/* FIRST SECTION  */
+/* ABOUT-ME TABLE  */
+
+#about .first-section img {
+    width: 80%;
+    display: none;
+}
+
+#about .content table { width: 100%; }
+#about .content table tbody { display: flex; }
+
+#about .content table tbody tr {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about .content table tbody th,
+#about .content table tbody td {
+    width: 100%;
+    color: #fff;
+    text-align: start;
+    padding: .5rem 1rem;
+    border: 1px solid #fff;
+}
+#about .content table tbody th { 
+    border-right: 0;
+    font-size: .9em; 
+    line-height: 20px;
+    font-family: cairo;
+}
+
+#about .content table tbody td { 
+    font-size: .9em; 
+    line-height: 20px;
+    font-family: cairo;
+}
+
+
+
+#about .content .first-section p {
+    color: #ccc;
+    font-size: .95em;
+    line-height: 20px;
+    font-family: cairo;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+#about .content .first-section button {
+    border: none;
+    outline: none;
+    margin: 1rem 0;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: .7em;
+    padding: 1rem 2rem;
+    border-radius: .3rem;
+    line-height: 10px;
+    font-family: cairo;
+    background: var(--theme);
+}
+
+
+/* SECOND SECTION  */
+
+#about .second-section {
+    display: grid;
+    gap: 2rem;
+}
+
+#about .service-grid {
+    gap: .5rem;
+    display: grid;
+}
+
+#about .service-grid .service {
+    padding: 1.5rem;
+    background: var(--dark);
+    border-radius: .5rem;
+    background-image: linear-gradient(315deg, #323248 50%, var(--dark) 50%);
+}
+
+#about .service-grid .service h1 {
+    color: #fff;
+    font-size: 1.3em;
+    font-family: agency;
+    letter-spacing: 1px;
+    margin-bottom: .3rem;
+    text-transform: uppercase;
+}
+
+#about .service-grid .service p {
+    color: #ccc;
+    font-size: .9em;
+    line-height: 20px;
+    font-family: cairo;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+
+#about .skills {
+    gap: 1.5rem 0;
+    display: grid;
+    padding: 1.5rem 1rem;
+    border-radius: .5rem;
+    background: var(--dark);
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#about .skill {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about .skill .info {
+    width: 90%;
+    height: 90%;
+    gap: .5rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    background: var(--darker);
+    box-shadow: inset 20px 20px 20px #00000072;
+}
+
+#about .skill .info p {
+    color: #fff;
+    font-size: .8em;
+    font-weight: 600;
+    font-family: cairo;
+}
+
+
+
+@media (min-width: 400px) {
+    #about .skill {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+@media (min-width: 500px) {
+
+    #about .content section h2 { font-size: 1.5em; }
+
+    #about .content table tbody th { font-size: 1em; }
+    #about .content table tbody td { font-size: 1em; }
+    #about .content .first-section p { font-size: 1em; }
+    
+    #about .content .first-section button { 
+        font-weight: 800;
+        font-size: .8em;
+    }
+
+    #about .service-grid .service p {
+        color: #ccc;
+        font-size: 1em;
+    }
+
+    #about .skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #about .skill {
+        width: 135px;
+        height: 135px;
+    }
+    
+}
+
+@media (min-width: 600px) {
+    #about .service-grid {
+        gap: .5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    #about .skill {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 700px) {
+    #about .skills {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #about .skill {
+        width: 135px;
+        height: 135px;
+    }
+    #about .service-grid {
+        gap: .5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}
+
+@media (min-width: 700px) {
+    
+    
+    #about .first-section .about-me {
+        display: grid;
+        padding: 1rem 2rem;
+        align-items: center;
+        /* background-image: linear-gradient(315deg, #323248 50%, var(--dark) 50%); */
+        grid-template-columns: [col-start] 1fr [col-end] 1fr;
+    }
+
+    #about .first-section img {
+        display: block;
+        width: 250px;
+    }
+
+    #about .first-section .whoami {
+        padding: 2rem;
+        background: var(--dark);
+    /* background-image: linear-gradient(315deg, #323248 50%, var(--dark) 50%); */
+
+    }
+
+    #about .content .first-section {
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    #about {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #about .service-grid {
+        gap: .5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about .service-grid .service { padding: 1rem; }
+
+    #about .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about .first-section .about-me {
+        display: block;
+        background-image: none;
+    }
+
+    #about .first-section .whoami { background-image: none; background: none;}
+    #about .first-section img {
+        display: none;
+    }
+
+    #about .skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media (min-width: 1200px) {
+    #about .service-grid {
+        gap: .5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    #about .first-section img {
+        display: none;
+    }
+    #about .skills {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (max-width: 350px) {
+    
+    #about .content table tbody th { font-size: .8em; }
+    #about .content table tbody td { font-size: .8em; }
+    #about .content .first-section p { font-size: .8em; }
+
+    #about .skills {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    #about .skill {
+        width: 120px;
+        height: 120px;
+    }
+
+}

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: calibri, sans-serif;
+}
+
+*::-webkit-scrollbar { display: none; }
+
+canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@font-face {
+    font-family: agency;
+    src: url(../assets/fonts/agency.TTF);
+}
+
+@font-face {
+    font-family: cairo;
+    src: url(../assets/fonts/cairo.ttf);
+}
+
+:root {
+    --theme: #fb0;
+    --dark: #262639;
+    --darker: #1c1c28;
+    --darkest: #0c0f12;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--darker);
+}

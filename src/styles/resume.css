@@ -1,0 +1,120 @@
+#resume {
+    display: grid;
+    min-height: 100vh;
+    background: var(--dark);
+}
+
+#resume .content {
+    gap: 2rem;
+    display: grid;
+    margin: auto;
+    max-width: 1366px;
+    padding: 5rem 1rem;
+}
+
+#resume .content section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#resume .content .first-section div {margin-bottom: 1.5rem;}
+#resume .content .first-section {border-bottom: 2px solid #3c3c59;}
+#resume .content .second-section h1 { margin-top: 1rem; }
+
+#resume .content h1 {
+    color: var(--theme);
+    letter-spacing: 2px;
+    font-family: agency, 'segoe ui', sans-serif;
+}
+
+#resume .content div .title {
+    opacity: .8;
+    font-size: 1em;
+    font-weight: 900;
+    color: var(--theme);
+    font-family: cairo;
+}
+
+#resume .content div p {
+    color: #ccc;
+    margin: .5rem 0;
+    font-size: 1em;
+    line-height: 20px;
+    font-family: 'Cairo';
+}
+
+#resume .content ul li {
+    color: #ccc;
+    margin: .5rem 1rem;
+    font-size: 1em;
+    line-height: 20px;
+    font-family: cairo;
+}
+
+
+@media (min-width: 500px) {
+
+    #resume .content div .title { font-size: 1.1em; }
+
+    #resume .content div li { font-size: 1em; }
+    #resume .content div p { font-size: 1.1em; }
+}
+
+
+@media (min-width: 900px) {
+
+    #resume {
+        padding: 2rem 1rem;
+    }
+
+    #resume .content {
+        margin: auto;
+        padding: 0;
+        max-width: 1366px;
+    }
+
+    #resume .content .first-section,
+    #resume .content .second-section {
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: var(--darker);
+    }
+
+    #resume .content .first-section div {margin-bottom: 0;}
+    #resume .content .second-section h1 { margin-top: 1rem; }
+    
+    #resume .content {
+        display: grid;
+        gap: .5rem;
+        place-content: center;
+        grid-template-columns: [col-start] 1fr [col-end] 1fr;
+    }
+
+
+
+}
+
+@media (min-width: 1000px) {
+    
+    #resume .content .first-section {border-bottom: 0}
+    
+    #resume .content {
+        gap: 0;
+    }
+    #resume .content .first-section,
+    #resume .content .second-section {
+        padding: 2rem;
+        border-radius: 0;
+        background-color: var(--dark);
+    }
+    #resume .content .second-section {
+        border-left: 5px solid #333349;
+        border-right: 5px solid #333349;
+        border-bottom: 5px solid #333349;
+    }
+    #resume .content .first-section {
+        border-top: 5px solid #333349;
+        border-left: 5px solid #333349;
+    }
+}

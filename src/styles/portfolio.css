@@ -1,0 +1,71 @@
+#portfolio {
+    margin: auto;
+    min-height: 100vh;
+    max-width: 1280px;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+#portfolio nav {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#portfolio nav h2 {
+    color: var(--theme);
+    letter-spacing: 1px;
+    font-family: agency, sans-serif;
+}
+
+
+#portfolio .projects {
+    gap: .5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+
+#portfolio section .project .cover {
+    height: 200px;
+    background: #fff;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    background-size: cover;
+    background-position: center;
+}
+
+#portfolio section .project {
+    padding: 1.5rem;
+    background: var(--dark);
+    border-radius: .5rem;
+}
+
+#portfolio section .project h2 { 
+    color: #fff; 
+    font-family: agency;
+    letter-spacing: 1px;
+}
+#portfolio section .project p { 
+    color: #ccc; 
+    font-size: .9em;
+    line-height: 20px;
+    font-family: cairo; 
+}
+
+#portfolio section .project button {
+    width: 100%;
+    padding: .8rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: .2em;
+    font-weight: 800;
+    font-size: .9em;
+    margin-top: 1rem;
+    cursor: pointer;
+    background: var(--theme);
+    line-height: 20px;
+    font-family: cairo;
+}

@@ -1,0 +1,149 @@
+#home {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: var(--darkest);
+}
+
+#home .content {
+    z-index: 99;
+    padding: 1rem;
+    margin-top: 14rem;
+    z-index: 11;
+}
+
+#home img {
+    top: 1rem;
+    width: 80%;
+    position: absolute;
+    /* z-index: 1; */
+}
+
+#home .content p {
+    color: #fff;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    font-family: agency, sans-serif;
+}
+
+#home .content h1,
+#home .content h1 {
+    font-size: 4em;
+    color: #Fff;
+    font-family: agency, 'Trebuchet MS';
+}
+
+#home .content h1 span {
+    color: var(--theme);
+    font-family: agency, 'Trebuchet MS';
+}
+
+#home .content h2 {
+    font-size: 1.4em;
+    color: var(--theme);
+    margin-bottom: 1rem;
+    font-family: agency;
+    letter-spacing: 2px;
+}
+
+#home .content .code {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 1rem;
+    position: relative;
+    border-radius: 1rem;
+    flex-direction: column;
+    background: var(--dark);
+}
+
+#home .content .code button {
+    padding: 1rem;
+    left: 50%;
+    width: 90%;
+    bottom: 1rem;
+    border: none;
+    outline: none;
+    font-weight: 800;
+    position: absolute;
+    cursor: pointer;
+    line-height: 15px;
+    font-family: cairo;
+    border-radius: .3rem;
+    background: var(--theme);
+    transform: translateX(-50%);
+}
+
+#home .content .code .title {
+    color: #fff;
+    font-size: 1em;
+    line-height: 20px;
+    font-family: cairo;
+}
+
+#home .content .function {
+    color: #7f00d4;
+}
+
+#home .content .call {
+    color: #60c7ff;
+}
+
+#home .content .variable {
+    color: #60c7ff;
+}
+
+#home .content .bracket {
+    color: #fb0;
+}
+
+#home .content .string {
+    color: #0fe70f;
+}
+
+@media (min-width: 500px) {
+    
+    #home .content .code { margin-top: 2rem }
+    #home .content .code .title { font-size: 1.2em; }
+
+}
+
+
+@media (min-width: 700px) {
+    #home img {
+        top: unset;
+        width: unset;
+        display: none;
+        position: relative;
+    }
+
+    #home .content {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    #home {
+        gap: 5rem;
+        padding: 2rem;
+        display: grid;
+        height: 100vh;
+        grid-template-columns: [col-start] 1fr [col-end] 1fr;
+    }
+
+    #home .content {
+        margin: auto;
+        max-width: 400px;
+    }
+
+    #home .content h1 { font-size: 5em; }
+    
+    #home img {
+        width: 450px;
+        margin: auto;
+        display: block;
+    }
+
+}
